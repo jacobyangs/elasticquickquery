@@ -1,4 +1,8 @@
+
+
+
+
 public interface ParseExpression {
-    ConditionNode getCondition(String expression);
-    String getString(String expression);
+    ConditionNode getCondition(String expression) throws Exception;
+    String getString(String expression) throws Exception;
 }

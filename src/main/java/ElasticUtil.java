@@ -12,7 +12,7 @@ import org.elasticsearch.index.query.RangeQueryBuilder;
 public class ElasticUtil {
     public static TransportClient client;
 
-    private static BoolQueryBuilder getBoolQueryBuilder(ConditionNode conditionNode){
+    public static BoolQueryBuilder getBoolQueryBuilder(ConditionNode conditionNode){
         BoolQueryBuilder bqb = QueryBuilders.boolQuery();
         if (conditionNode==null){
             return bqb;
